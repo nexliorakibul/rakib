@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio - Frontend Developer</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-pVU1pzI9D+3dYq4/Jtlq5MLUq3bqEtt8sXeChfQuojliIsfFvKZrfx6gjOw/9f3XuCF6eHqZPUpZMYw30JZxsw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">MyPortfolio</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Dark Mode Toggle -->
+      <button id="theme-button" class="theme-button" aria-label="Toggle Dark/Light Mode">
+        <i class="fas fa-moon"></i>
+      </button>
+
+      <!-- Hamburger Menu -->
+      <div class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main">
+    <!-- Home Section -->
+    <section class="home section" id="home" data-aos="fade-up">
+      <div class="container home__container">
+        <h1 class="home__title">Hi, I'm <span>Your Name</span></h1>
+        <h3 class="home__subtitle">Frontend Developer</h3>
+        <p class="home__description">
+          Passionate about building beautiful and performant web applications.
+        </p>
+        <div class="home__socials">
+          <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener" aria-label="LinkedIn" class="home__social-link">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub" class="home__social-link">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:your.email@example.com" aria-label="Email" class="home__social-link">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about" data-aos="fade-up">
+      <div class="container about__container">
+        <h2 class="section__title">About Me</h2>
+        <p class="about__bio">
+          I am a frontend developer with experience in building responsive and user-friendly websites using HTML, CSS, and JavaScript. I enjoy turning complex problems into simple, beautiful, and intuitive designs.
+        </p>
+
+        <h3 class="skills__title">Skills</h3>
+        <div class="skills__list">
+          <div class="skill">
+            <i class="fab fa-html5 skill__icon"></i>
+            <span>HTML5</span>
+            <div class="skill__bar">
+              <div class="skill__progress" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <i class="fab fa-css3-alt skill__icon"></i>
+            <span>CSS3</span>
+            <div class="skill__bar">
+              <div class="skill__progress" style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <i class="fab fa-js-square skill__icon"></i>
+            <span>JavaScript</span>
+            <div class="skill__bar">
+              <div class="skill__progress" style="width: 80%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <i class="fab fa-react skill__icon"></i>
+            <span>React</span>
+            <div class="skill__bar">
+              <div class="skill__progress" style="width: 70%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <i class="fab fa-git-alt skill__icon"></i>
+            <span>Git</span>
+            <div class="skill__bar">
+              <div class="skill__progress" style="width: 75%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects" data-aos="fade-up">
+      <div class="container projects__container">
+        <h2 class="section__title">Projects</h2>
+        <div class="projects__grid">
+          <!-- Project Card 1 -->
+          <article class="project__card" data-aos="zoom-in" data-aos-delay="100">
+            <img src="assets/images/project1.jpg" alt="Project 1" class="project__img" />
+            <h3 class="project__title">Project One</h3>
+            <p class="project__desc">A responsive website built with HTML, CSS, and JavaScript.</p>
+            <div class="project__links">
+              <a href="https://github.com/yourusername/project-one" target="_blank" rel="noopener" aria-label="GitHub Repo"><i class="fab fa-github"></i></a>
+              <a href="https://yourusername.github.io/project-one" target="_blank" rel="noopener" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </article>
+
+          <!-- Project Card 2 -->
+          <article class="project__card" data-aos="zoom-in" data-aos-delay="200">
+            <img src="assets/images/project2.jpg" alt="Project 2" class="project__img" />
+            <h3 class="project__title">Project Two</h3>
+            <p class="project__desc">A JavaScript application featuring dynamic UI components.</p>
+            <div class="project__links">
+              <a href="https://github.com/yourusername/project-two" target="_blank" rel="noopener" aria-label="GitHub Repo"><i class="fab fa-github"></i></a>
+              <a href="https://yourusername.github.io/project-two" target="_blank" rel="noopener" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </article>
+
+          <!-- Project Card 3 -->
+          <article class="project__card" data-aos="zoom-in" data-aos-delay="300">
+            <img src="assets/images/project3.jpg" alt="Project 3" class="project__img" />
+            <h3 class="project__title">Project Three</h3>
+            <p class="project__desc">A React single-page application with API integration.</p>
+            <div class="project__links">
+              <a href="https://github.com/yourusername/project-three" target="_blank" rel="noopener" aria-label="GitHub Repo"><i class="fab fa-github"></i></a>
+              <a href="https://yourusername.github.io/project-three" target="_blank" rel="noopener" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact" data-aos="fade-up">
+      <div class="container contact__container">
+        <h2 class="section__title">Contact Me</h2>
+        <form
+          action="https://formspree.io/f/mwkajnzn"
+          method="POST"
+          class="contact__form"
+          id="contact-form"
+        >
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Rakibul Hasan"
+              required
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="_replyto"
+              id="email"
+              placeholder="rakibul.aqib@gmail.com"
+              required
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              rows="5"
+              placeholder="Thank you for coming"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <p>&copy; 2025 Rakibul HAsan. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- AOS Animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
